@@ -1,0 +1,27 @@
+body {
+    background-color: #252A34;
+    color: #EAEAEA;
+    
+}
+
+header {
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+
+    text-align: center;
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.question-box {
+    border: 2px solid #FF2E63;
+    border-radius: 15px;
+    height: 90vh;
+    margin: 20px;
+}
