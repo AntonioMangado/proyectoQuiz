@@ -70,6 +70,11 @@ input {
     color: #252A34;
 }
 
+.answer-box:active {
+    background-color: #0a8987;
+    border: #0a8987;
+}
+
 
 .save-point {
     background-color: #5FD068;
@@ -81,4 +86,49 @@ input {
     
     border: 2px solid #5FD068;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+    .question-box {
+        font-size: 2rem;
+    }
+
+    .answer-box{
+        font-size: 1.5rem;
+        text-align: center;
+    
+    
+        width: 200px;
+        margin: auto;
+        padding: 30px;
+    
+    
+        border: 2px solid #08D9D6;
+        border-radius: 15px;;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .question-box {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.6rem;
+
+        padding: 30px;
+    }
+
+    .answer-box {
+        font-size: 1.2rem;
+        
+    }
+
+    .save-point {
+        font-size: 1.6rem;
+    }
 }
