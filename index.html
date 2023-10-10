@@ -17,9 +17,9 @@
 
     <main>
 
-        <form name="quiz">
-            <article class="question-box">
-                <legend>¿Cuál es el juego de mundo abierto desarrollado por Rockstar Games ambientado en una versión
+        <form name="quiz" id="vg-quiz">
+            <article class="question-box" id="open-world">
+                <legend>1. ¿Cuál es el juego de mundo abierto desarrollado por Rockstar Games ambientado en una versión
                     ficticia de Los Ángeles?</legend>
                 <div class="answer-box">
                     <label for="gta-field">Grand Theft Auto V</label>
@@ -43,7 +43,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿En qué año fue lanzado el popular juego de battle royale "Fortnite"?</legend>
+                <legend>2. ¿En qué año fue lanzado el popular juego de battle royale "Fortnite"?</legend>
                 <div class="answer-box">
                     <label for="2017-field">2017</label>
                     <input id="2017-field" type="radio" name="q2" value="2017">
@@ -65,7 +65,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Cuál es el personaje principal del videojuego "The Legend of Zelda: Breath of the Wild"?
+                <legend>3. ¿Cuál es el personaje principal del videojuego "The Legend of Zelda: Breath of the Wild"?
                 </legend>
                 <div class="answer-box">
                     <label for="link-field">Link</label>
@@ -89,7 +89,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Cuál es el juego de estrategia en tiempo real desarrollado por Blizzard Entertainment que ha
+                <legend>4. ¿Cuál es el juego de estrategia en tiempo real desarrollado por Blizzard Entertainment que ha
                     sido un éxito a lo largo de los años?</legend>
                 <div class="answer-box">
                     <label for="sc2-field">StarCraft II</label>
@@ -112,7 +112,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Qué compañía es conocida por crear la serie de juegos "Final Fantasy"?</legend>
+                <legend>5. ¿Qué compañía es conocida por crear la serie de juegos "Final Fantasy"?</legend>
                 <div class="answer-box">
                     <label for="enix-field">Square Enix</label>
                     <input id="enix-field" type="radio" name="q5" value="enix">
@@ -135,7 +135,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Cuál es el juego de terror en primera persona desarrollado por Frictional Games, ambientado en
+                <legend>6. ¿Cuál es el juego de terror en primera persona desarrollado por Frictional Games, ambientado en
                     una base submarina?</legend>
                 <div class="answer-box">
                     <label for="soma-field">SOMA</label>
@@ -159,7 +159,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿En qué año se lanzó la consola PlayStation 4 de Sony?</legend>
+                <legend>7. ¿En qué año se lanzó la consola PlayStation 4 de Sony?</legend>
                 <div class="answer-box">
                     <label for="2013-field">2013</label>
                     <input id="2013-field" type="radio" name="q7" value="2013">
@@ -182,7 +182,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Cuál es el juego de plataformas desarrollado por Naughty Dog que presenta al personaje Nathan
+                <legend>8. ¿Cuál es el juego de plataformas desarrollado por Naughty Dog que presenta al personaje Nathan
                     Drake?</legend>
                 <div class="answer-box">
                     <label for="unch4-field">Uncharted 4: A Thief's End</label>
@@ -206,7 +206,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿Cuál es el juego de construcción y supervivencia desarrollado por Mojang que se ha convertido
+                <legend>9. ¿Cuál es el juego de construcción y supervivencia desarrollado por Mojang que se ha convertido
                     en un fenómeno cultural?</legend>
                 <div class="answer-box">
                     <label for="minecraft-field">Minecraft</label>
@@ -227,7 +227,7 @@
             </article>
 
             <article class="question-box">
-                <legend>¿En qué género se ubica el juego "Overwatch" de Blizzard Entertainment?</legend>
+                <legend>10. ¿En qué género se ubica el juego "Overwatch" de Blizzard Entertainment?</legend>
                 <div class="answer-box">
                     <label for="fps-field">Shooter en primera persona (FPS)</label>
                     <input id="fps-field" type="radio" name="q10" value="fps">
@@ -245,8 +245,10 @@
                     <input id="rpg-field" type="radio" name="q10" value="rpg">
                 </div>
             </article>
-
-            <button  class="save-point" type="submit">Punto de guardado</button>
+            <div class="btn-flex-container">
+                <button  class="save-point" type="submit">Punto de guardado</button>
+                <div class="warning-box"></div>
+            </div>
         </form>
     </main>
 
