@@ -42,14 +42,30 @@ const correctAnswers = [
   },
 ]
 
+//COLOREAR CASILLAS DE VERDE SI ES CORRECTO, ROJO SI ES INCORRECTO
+let radioBtns = document.querySelectorAll('input[type="radio"]');
 
-let answerButtons = document.querySelectorAll(".answer-box");
+for (let i = 0; i < radioBtns.length; i++) {
+  radioBtns[i].addEventListener("click", function(){
+    if (radioBtns[i].value == "gta" || radioBtns[i].value == "link" || radioBtns[i].value == "2017" || radioBtns[i].value == "sc2" || radioBtns[i].value == "enix" || radioBtns[i].value == "amnesia" || radioBtns[i].value == "2013" || radioBtns[i].value == "unch4" || radioBtns[i].value == "minecraft" || radioBtns[i].value == "fps") {
+      radioBtns[i].parentElement.style.backgroundColor = "#5FD068";
+      radioBtns[i].parentElement.style.borderColor = "#5FD068";
+    } else {
+      radioBtns[i].parentElement.style.backgroundColor = "red";
+      radioBtns[i].parentElement.style.borderColor = "red";
+    }
 
-for (let i = 0; i < answerButtons.length; i++) {
-  answerButtons[i].addEventListener("click", function changeColor() {
-      answerButtons[i].style.backgroundColor = "#08D9D6";
-  });
-}
+  //  INTENTO DE QUE SE COLOREEN DE AZUL LAS CASILLAS MARCADAS SOLO
+  //   if (radioBtns[i].checked == true) {
+  //   radioBtns[i].parentElement.style.backgroundColor = "#08D9D6";
+  //   radioBtns[i].parentElement.style.color = "#252A34";
+  // } else if (radioBtns[i].checked == false) {
+  //   radioBtns[i].parentElement.style.backgroundColor = "#252A34";
+  // }
+  })
+  }
+
+  
 
 
 //VALIDACION DE FORMULARIO
