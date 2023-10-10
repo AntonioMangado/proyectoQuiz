@@ -18,10 +18,142 @@ header {
 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    margin-bottom: 50px;
+    grid-column: 1 / span 2;
+}
+
+label {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    /* visibility: hidden; */
+    display: none;
+}
+
 
 .question-box {
     border: 2px solid #FF2E63;
     border-radius: 15px;
-    height: 90vh;
+
+    height: 80vh;
+    margin: 40px;
+    padding: 60px;
+
+    font-size: 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1,5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+.answer-box{
+    font-size: 2.5rem;
+    text-align: center;
+
+
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+
+
+    border: 2px solid #08D9D6;
+    border-radius: 15px;;
+}
+
+.answer-box:hover {
+    background-color: #08D9D6;
+    color: #252A34;
+}
+
+.answer-box:active {
+    background-color: #0a8987;
+    border: #0a8987;
+}
+
+.btn-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.save-point {
+    background-color: #5FD068;
+    color: #252A34;
+
+    padding: 30px;
     margin: 20px;
+    font-size: 2.5rem;
+    height: 105px;
+    
+    border: 2px solid #5FD068;
+    border-radius: 15px;
+}
+
+.warning-box > p {
+    width: 400px;
+    padding: 30px;
+    margin: 20px auto 30px;
+    font-size: 2.5rem;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .question-box {
+        font-size: 2rem;
+    }
+
+    .answer-box{
+        font-size: 1.5rem;
+        text-align: center;
+    
+    
+        width: 200px;
+        margin: auto;
+        padding: 30px;
+    
+    
+        border: 2px solid #08D9D6;
+        border-radius: 15px;;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .question-box {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.6rem;
+
+        padding: 30px;
+    }
+
+    .answer-box {
+        font-size: 1.2rem;
+        
+    }
+
+    .save-point {
+        font-size: 1.6rem;
+    }
 }

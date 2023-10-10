@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,167 +16,243 @@
     </header>
 
     <main>
-        
-        <form name="quiz">
-            <fieldset class="question-box">
-              <legend>¿Cuál es el juego de mundo abierto desarrollado por Rockstar Games ambientado en una versión ficticia de Los Ángeles?</legend>
-              <label for="gta-field">Grand Theft Auto V</label>
-              <input id="gta-field" type="radio" name="q1" value="gta">
-        
-              <label for="rdd2-field">Red Dead Redemption 2</label>
-              <input id="rdd2-field" type="radio" name="q1" value="rdd2">
-        
-              <label for="tes5-field">The Elder Scrolls V: Skyrim</label>
-              <input id="tes5-field" type="radio" name="q1" value="tes5">
 
-              <label for="tlou2-field">The Last of Us Part II</label>
-              <input id="tlou2-field" type="radio" q2 value="tlou2">
-            </fieldset>
+        <form name="quiz" id="vg-quiz">
+            <article class="question-box" id="open-world">
+                <legend>1. ¿Cuál es el juego de mundo abierto desarrollado por Rockstar Games ambientado en una versión
+                    ficticia de Los Ángeles?</legend>
+                <div class="answer-box">
+                    <label for="gta-field">Grand Theft Auto V</label>
+                    <input id="gta-field" type="radio" name="q1" value="gta">
+                </div>
 
-            <fieldset class="question-box">
-                <legend>¿En qué año fue lanzado el popular juego de battle royale "Fortnite"?</legend>
-                <label for="2017-field">2017</label>
-                <input id="2017-field" type="radio" name="q2" value="2017">
+                <div class="answer-box">
+                    <label for="rdd2-field">Red Dead Redemption 2</label>
+                    <input id="rdd2-field" type="radio" name="q1" value="rdd2">
+                </div>
 
-                <label for="2016-field">2016</label>
-                <input id="2016-field" type="radio" name="q2" value="2016">
-          
-                <label for="2018-field">2018</label>
-                <input id="2018-field" type="radio" name="q2" value="2018">
-          
-                <label for="2019-field">2019</label>
-                <input id="2019-field" type="radio" name="q2" value="2019">
-            </fieldset>
+                <div class="answer-box">
+                    <label for="tes5-field">The Elder Scrolls V: Skyrim</label>
+                    <input id="tes5-field" type="radio" name="q1" value="tes5">
+                </div>
 
-            <fieldset class="question-box">
-                <legend>¿Cuál es el personaje principal del videojuego "The Legend of Zelda: Breath of the Wild"?</legend>
-                <label for="link-field">Link</label>
-                <input id="link-field" type="radio" name="q3" value="link">
-          
-                <label for="zelda-field">Zelda</label>
-                <input id="zelda-field" type="radio" name="q3" value="zelda">
-          
-                <label for="ganon-field">Ganon</label>
-                <input id="ganon-field" type="radio" name="q3" value="ganon">
-          
-                <label for="impa-field">Impa</label>
-                <input id="impa-field" type="radio" name="q3" value="impa">
-            </fieldset>
+                <div class="answer-box">
+                    <label for="tlou2-field">The Last of Us Part II</label>
+                    <input id="tlou2-field" type="radio" name="q1" value="tlou2">
+                </div>
+            </article>
 
-            <fieldset class="question-box">
-                <legend>¿Cuál es el juego de estrategia en tiempo real desarrollado por Blizzard Entertainment que ha sido un éxito a lo largo de los años?</legend>
-                <label for="sc2-field">StarCraft II</label>
-                <input id="sc2-field" type="radio" name="q4" value="sc2">
-          
-                <label for="aoe3-field">Age of Empires III</label>
-                <input id="aoe3-field" type="radio" name="q4" value="aoe3">
-          
-                <label for="civ6-field">Civilization VI</label>
-                <input id="civ6-field" type="radio" name="q4" value="civ6">
-          
-                <label for="lol">League of Legends</label>
-                <input id="lol" type="radio" name="q4" value="lol">
-            </fieldset>
+            <article class="question-box">
+                <legend>2. ¿En qué año fue lanzado el popular juego de battle royale "Fortnite"?</legend>
+                <div class="answer-box">
+                    <label for="2017-field">2017</label>
+                    <input id="2017-field" type="radio" name="q2" value="2017">
+                </div>
+                <div class="answer-box">
+                    <label for="2016-field">2016</label>
+                    <input id="2016-field" type="radio" name="q2" value="2016">
+                </div>
 
-            <fieldset class="question-box">
-                <legend>¿Qué compañía es conocida por crear la serie de juegos "Final Fantasy"?</legend>
-                <label for="enix-field">Square Enix</label>
-                <input id="enix-field" type="radio" name="q5" value="enix">
-          
-                <label for="capcom-field">Capcom</label>
-                <input id="capcom-field" type="radio" name="q5" value="capcom">
-          
-                <label for="ubisoft-field">Ubisoft</label>
-                <input id="ubisoft-field" type="radio" name="q5" value="ubisoft">
-          
-                <label for="nintendo-field">Nintendo</label>
-                <input id="nintendo-field" type="radio" name="q5" value="nintendo">
-            </fieldset>
+                <div class="answer-box">
+                    <label for="2018-field">2018</label>
+                    <input id="2018-field" type="radio" name="q2" value="2018">
+                </div>
+                <div class="answer-box">
 
-            <fieldset class="question-box">
-                <legend>¿Cuál es el juego de terror en primera persona desarrollado por Frictional Games, ambientado en una base submarina?</legend>
-                <label for="soma-field">SOMA</label>
-                <input id="soma-field" type="radio" name="q6" value="soma">
+                    <label for="2019-field">2019</label>
+                    <input id="2019-field" type="radio" name="q2" value="2019">
+                </div>
+            </article>
 
-                <label for="amnesia-field">Amnesia: The Dark Descent</label>
-                <input id="amnesia-field" type="radio" name="q6" value="amnesia">
-          
-                <label for="outlast-field">Outlast</label>
-                <input id="outlast-field" type="radio" name="q6" value="outlast">
-          
-                <label for="re7-field">Resident Evil 7: Biohazard</label>
-                <input id="re7-field" type="radio" name="q6" value="re7">
-            </fieldset>
+            <article class="question-box">
+                <legend>3. ¿Cuál es el personaje principal del videojuego "The Legend of Zelda: Breath of the Wild"?
+                </legend>
+                <div class="answer-box">
+                    <label for="link-field">Link</label>
+                    <input id="link-field" type="radio" name="q3" value="link">
+                </div>
 
-            <fieldset class="question-box">
-                <legend>¿En qué año se lanzó la consola PlayStation 4 de Sony?</legend>
-                <label for="2013-field">2013</label>
-                <input id="2013-field" type="radio" name="q7" value="2013">
-            
-                <label for="2014-field">2014</label>
-                <input id="2014-field" type="radio" name="q7" value="2014">
-            
-                <label for="2012-field">2012</label>
-                <input id="2012-field" type="radio" name="q7" value="2012">
-            
-                <label for="2015-field">2015</label>
-                <input id="2015-field" type="radio" name="q7" value="2015">
-            </fieldset>
+                <div class="answer-box">
+                    <label for="zelda-field">Zelda</label>
+                    <input id="zelda-field" type="radio" name="q3" value="zelda">
+                </div>
+                <div class="answer-box">
 
-            <fieldset class="question-box">
-                <legend>¿Cuál es el juego de plataformas desarrollado por Naughty Dog que presenta al personaje Nathan Drake?</legend>
-                <label for="unch4-field">Uncharted 4: A Thief's End</label>
-                <input id="unch4-field" type="radio" name="q8" value="unch4">
-            
-                <label for="gow-field">God of War</label>
-                <input id="gow-field" type="radio" name="q8" value="gow">
-            
-                <label for="hzd-field">Horizon Zero Dawn</label>
-                <input id="hzd-field" type="radio" name="q8" value="hzd">
-            
-                <label for="lastguard-field">The Last Guardian</label>
-                <input id="lastguard-field" type="radio" name="q8" value="lastguard">
-            </fieldset>
+                    <label for="ganon-field">Ganon</label>
+                    <input id="ganon-field" type="radio" name="q3" value="ganon">
+                </div>
+                <div class="answer-box">
 
-            <fieldset class="question-box">
-                <legend>¿Cuál es el juego de construcción y supervivencia desarrollado por Mojang que se ha convertido en un fenómeno cultural?</legend>
-                <label for="minecraft-field">Minecraft</label>
-                <input id="minecraft-field" type="radio" name="q9" value="minecraft">
-            
-                <label for="terraria-field">Terraria</label>
-                <input id="terraria-field" type="radio" name="q9" value="terraria">
-            
-                <label for="stardew-field">Stardew Valley</label>
-                <input id="stardew-field" type="radio" name="q9" value="stardew">
-            
-                <label for="sims-field">The Sims</label>
-                <input id="sims-field" type="radio" name="q9" value="sims">
-            </fieldset>
+                    <label for="impa-field">Impa</label>
+                    <input id="impa-field" type="radio" name="q3" value="impa">
+                </div>
+            </article>
 
-            <fieldset class="question-box">
-                <legend>¿En qué género se ubica el juego "Overwatch" de Blizzard Entertainment?</legend>
-                <label for="fps-field">Shooter en primera persona (FPS)</label>
-                <input id="fps-field" type="radio" name="q10" value="fps">
-            
-                <label for="tbs-field">Estrategia por turnos</label>
-                <input id="tbs-field" type="radio" name="q10" value="tbs">
-            
-                <label for="lifesim-field">Simulación de vida</label>
-                <input id="lifesim-field" type="radio" name="q10" value="lifesim">
-            
-                <label for="rpg-field">Juego de rol (RPG)</label>
-                <input id="rpg-field" type="radio" name="q10" value="rpg">
-            </fieldset>
-              
-        
-            <button type="submit">PUNTO DE GUARDADO</button>
+            <article class="question-box">
+                <legend>4. ¿Cuál es el juego de estrategia en tiempo real desarrollado por Blizzard Entertainment que ha
+                    sido un éxito a lo largo de los años?</legend>
+                <div class="answer-box">
+                    <label for="sc2-field">StarCraft II</label>
+                    <input id="sc2-field" type="radio" name="q4" value="sc2">
+                </div>
+                <div class="answer-box">
+
+                    <label for="aoe3-field">Age of Empires III</label>
+                    <input id="aoe3-field" type="radio" name="q4" value="aoe3">
+                </div>
+                <div class="answer-box">
+
+                    <label for="civ6-field">Civilization VI</label>
+                    <input id="civ6-field" type="radio" name="q4" value="civ6">
+                </div>
+                <div class="answer-box">
+                    <label for="lol">League of Legends</label>
+                    <input id="lol" type="radio" name="q4" value="lol">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>5. ¿Qué compañía es conocida por crear la serie de juegos "Final Fantasy"?</legend>
+                <div class="answer-box">
+                    <label for="enix-field">Square Enix</label>
+                    <input id="enix-field" type="radio" name="q5" value="enix">
+                </div>
+                <div class="answer-box">
+
+                    <label for="capcom-field">Capcom</label>
+                    <input id="capcom-field" type="radio" name="q5" value="capcom">
+                </div>
+                <div class="answer-box">
+
+                    <label for="ubisoft-field">Ubisoft</label>
+                    <input id="ubisoft-field" type="radio" name="q5" value="ubisoft">
+                </div>
+                <div class="answer-box">
+
+                    <label for="nintendo-field">Nintendo</label>
+                    <input id="nintendo-field" type="radio" name="q5" value="nintendo">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>6. ¿Cuál es el juego de terror en primera persona desarrollado por Frictional Games, ambientado en
+                    una base submarina?</legend>
+                <div class="answer-box">
+                    <label for="soma-field">SOMA</label>
+                    <input id="soma-field" type="radio" name="q6" value="soma">
+                </div>
+                <div class="answer-box">
+
+                    <label for="amnesia-field">Amnesia: The Dark Descent</label>
+                    <input id="amnesia-field" type="radio" name="q6" value="amnesia">
+                </div>
+                <div class="answer-box">
+
+                    <label for="outlast-field">Outlast</label>
+                    <input id="outlast-field" type="radio" name="q6" value="outlast">
+                </div>
+                <div class="answer-box">
+
+                    <label for="re7-field">Resident Evil 7: Biohazard</label>
+                    <input id="re7-field" type="radio" name="q6" value="re7">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>7. ¿En qué año se lanzó la consola PlayStation 4 de Sony?</legend>
+                <div class="answer-box">
+                    <label for="2013-field">2013</label>
+                    <input id="2013-field" type="radio" name="q7" value="2013">
+                </div>
+                <div class="answer-box">
+
+                    <label for="2014-field">2014</label>
+                    <input id="2014-field" type="radio" name="q7" value="2014">
+                </div>
+                <div class="answer-box">
+
+                    <label for="2012-field">2012</label>
+                    <input id="2012-field" type="radio" name="q7" value="2012">
+                </div>
+                <div class="answer-box">
+
+                    <label for="2015-field">2015</label>
+                    <input id="2015-field" type="radio" name="q7" value="2015">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>8. ¿Cuál es el juego de plataformas desarrollado por Naughty Dog que presenta al personaje Nathan
+                    Drake?</legend>
+                <div class="answer-box">
+                    <label for="unch4-field">Uncharted 4: A Thief's End</label>
+                    <input id="unch4-field" type="radio" name="q8" value="unch4">
+                </div>
+                <div class="answer-box">
+
+                    <label for="gow-field">God of War</label>
+                    <input id="gow-field" type="radio" name="q8" value="gow">
+                </div>
+                <div class="answer-box">
+
+                    <label for="hzd-field">Horizon Zero Dawn</label>
+                    <input id="hzd-field" type="radio" name="q8" value="hzd">
+                </div>
+                <div class="answer-box">
+
+                    <label for="lastguard-field">The Last Guardian</label>
+                    <input id="lastguard-field" type="radio" name="q8" value="lastguard">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>9. ¿Cuál es el juego de construcción y supervivencia desarrollado por Mojang que se ha convertido
+                    en un fenómeno cultural?</legend>
+                <div class="answer-box">
+                    <label for="minecraft-field">Minecraft</label>
+                    <input id="minecraft-field" type="radio" name="q9" value="minecraft">
+                </div>
+                <div class="answer-box">
+                    <label for="terraria-field">Terraria</label>
+                    <input id="terraria-field" type="radio" name="q9" value="terraria">
+                </div>
+                <div class="answer-box">
+                    <label for="stardew-field">Stardew Valley</label>
+                    <input id="stardew-field" type="radio" name="q9" value="stardew">
+                </div>
+                <div class="answer-box">
+                    <label for="sims-field">The Sims</label>
+                    <input id="sims-field" type="radio" name="q9" value="sims">
+                </div>
+            </article>
+
+            <article class="question-box">
+                <legend>10. ¿En qué género se ubica el juego "Overwatch" de Blizzard Entertainment?</legend>
+                <div class="answer-box">
+                    <label for="fps-field">Shooter en primera persona (FPS)</label>
+                    <input id="fps-field" type="radio" name="q10" value="fps">
+                </div>
+                <div class="answer-box">
+                    <label for="tbs-field">Estrategia por turnos</label>
+                    <input id="tbs-field" type="radio" name="q10" value="tbs">
+                </div>
+                <div class="answer-box">
+                    <label for="lifesim-field">Simulación de vida</label>
+                    <input id="lifesim-field" type="radio" name="q10" value="lifesim">
+                </div>
+                <div class="answer-box">
+                    <label for="rpg-field">Juego de rol (RPG)</label>
+                    <input id="rpg-field" type="radio" name="q10" value="rpg">
+                </div>
+            </article>
+            <div class="btn-flex-container">
+                <button  class="save-point" type="submit">Punto de guardado</button>
+                <div class="warning-box"></div>
+            </div>
         </form>
-
     </main>
 
-    <footer>
-
-    </footer>
+<script src="script.js"></script>    
 </body>
 
 </html>
