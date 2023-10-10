@@ -8,7 +8,7 @@
         
 ## :joystick: Como acceder :joystick: ##
 
-Para acceder, clica en el link de GitHubPages que encontraras en el menú del repositorio, a la derecha. Una vez dentro, escrolea hacia abajo para encontrar las preguntas. Si se elige la respuesta correcta, se ha usado JavaScript para que el usuario reciba un feedback visual, al iluminarse la caja en verde si es correcta, o rojo si es incorrecta. ¡No olvides guardar tu progreso para validar el formulario al final!
+Para acceder, clica en el siguiente enlace: https://github.com/AntonioMangado/proyectoQuiz. Una vez dentro, escrolea hacia abajo para encontrar las preguntas. Si se elige la respuesta correcta, se ha usado JavaScript para que el usuario reciba un feedback visual, al iluminarse la caja en verde si es correcta, o rojo si es incorrecta. ¡No olvides guardar tu progreso para validar el formulario al final!
 
 
 
