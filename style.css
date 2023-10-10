@@ -28,6 +28,12 @@ legend {
     grid-column: 1 / span 2;
 }
 
+label {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
 input {
     /* visibility: hidden; */
     display: none;
